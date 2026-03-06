@@ -1,20 +1,6 @@
 #!/usr/bin/env python3
 """
-本地用 OpenAI ChatGPT 控制 TripleA 日本方，支持单次执行或全自动对战。
-
-依赖: pip install openai
-环境: OPENAI_API_KEY
-前置: 先启动 host + bridge，日本已被 bridge 接管。
-
-用法:
-  单次（执行一轮模型决策，最多约 50 次 tool 调用）:
-    python chatgpt_driver.py
-
-  全自动对战（一直跑，直到你 Ctrl+C；每轮结束后自动发「继续」）:
-    python chatgpt_driver.py --auto
-
-  bridge 不在本机时:
-    python chatgpt_driver.py --base-url http://其他机器:8081
+Chatgpt Driven combat, controlling 
 """
 from __future__ import annotations
 
@@ -25,7 +11,7 @@ import time
 
 from triplea_bridge_client import TripleABridgeClient
 
-# 不同地图里日本方名字可能是 "Japanese" 或 "Japan"，都视为日本回合
+
 JAPAN_PLAYER_NAMES = ("Japanese", "Japan")
 
 TOOLS = [
@@ -216,7 +202,7 @@ def main() -> None:
     except Exception as e:
         print(f"Bridge 不可达 ({args.base_url}): {e}")
         return
-    print("Bridge 已连接，开始驱动日本方。")
+    print("Bridge 已连接，开始控制日方。")
 
     system_content = SYSTEM_PROMPT
     if args.rules_file and os.path.isfile(args.rules_file):
@@ -246,7 +232,7 @@ def main() -> None:
 
     if not args.auto:
         run_one_round(openai_client, client, messages)
-        print("单次执行结束。")
+        print("单次执行结束")
         return
 
     # 全自动对战：在「用户消息」边界裁剪，避免 tool 消息脱离前面的 assistant+tool_calls 导致 400
