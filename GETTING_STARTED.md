@@ -9,7 +9,7 @@ In the current setup, GPT controls Japan while other nations are controlled by b
 
 ### 1.1 环境准备 Prepare the Enviroment
 
-| 需要 | Required |
+| Required | Detail |
 |------|------|
 | **Java JDK 17+** | 用于跑 TripleA Host 和 Bridge。 |
 | **Python 3.10+** | 用于跑 GPT 驱动脚本。 |
