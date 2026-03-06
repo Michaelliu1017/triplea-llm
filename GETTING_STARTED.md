@@ -24,8 +24,10 @@ cd triplea-llm
 
 ### 1.3 启动顺序 Startup Order
 
-#### 打开三个终端页面 You will run Host, Bridge, and GPT Controller in three separate terminals.
-#### 终端 1：启动 Host（TripleA GUI）
+#### 打开三个终端页面 
+#### You will run Host, Bridge, and GPT Controller in three separate terminals.
+#### 终端 1：启动 Host
+#### Terminal 1: Start the Host
 
 ```bash
 cd triplea-llm
@@ -33,11 +35,17 @@ cd triplea-llm
 ```
 
 - 等待 GUI 打开后：
-  - **Play** → **Host a networked game**。
-  - 选地图: WW2 Pacific 2nd Edition。
+- When the GUI opens:
+  - 点击 **Play** → **Host a networked game**。
+  - Click **Play** → **Host a networked game**。
+  - 选地图 : WW2 Pacific 2nd Edition。
+  - Select Map: WW2 Pacific 2nd Edition。
   - **玩家设置**：**日本** 设为 **Human** 并取消选择前边的checkbox，**其他所有玩家**设为 **AI**（Bot）或 **Human**。
+  - **Player Setting** Set Japan to Human and uncheck the checkbox in front of it and Set all other players to AI (Bot) or Human
   - 记下 **端口** 选择 3301，**不要设密码**。
+  - Choose port 3301 and Do not set a password
   - 进入 **等待玩家** 界面，**先不要点「开始游戏」**。
+  - Enter the Waiting for Players screen
 
 #### 终端 2：启动 Bridge
 
