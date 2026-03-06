@@ -39,7 +39,7 @@ cd triplea-llm
 
 ```bash
 cd triplea-llm
-./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3301 --name Bot_Bridge --take Japanese"
+./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3301 --name Bot_Yamamoto_Isoroku --take Japanese"
 ```
 
 - `--port 3301` 要和 Host 里显示的端口一致。
