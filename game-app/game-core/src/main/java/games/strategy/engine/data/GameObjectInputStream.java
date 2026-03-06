@@ -34,6 +34,8 @@ public class GameObjectInputStream extends ObjectInputStream {
       return ((GameObjectStreamData) obj).getReference(getData());
     } else if (obj instanceof Unit) {
       return resolveUnit((Unit) obj);
+    } else if (obj instanceof OptionalStringHolder) {
+      return ((OptionalStringHolder) obj).toOptional();
     } else {
       return obj;
     }

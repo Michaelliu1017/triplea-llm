@@ -18,6 +18,7 @@ hamcrest = "2.0.0.0"
 jackson-datatype = "2.21.1"
 jakarta-mail = "2.0.2"
 java-websocket = "1.6.0"
+javalin = "6.3.0"
 jaxb-impl = "4.0.6"
 jetbrains-annotations = "26.1.0"
 jlayer = "1.0.1.4"
@@ -61,6 +62,7 @@ hamcrest = { module = "org.hamcrest:java-hamcrest", version.ref = "hamcrest" }
 jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson-datatype" }
 jakarta-mail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakarta-mail" }
 java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "java-websocket" }
+javalin = { module = "io.javalin:javalin", version.ref = "javalin" }
 jaxb-impl = { module = "com.sun.xml.bind:jaxb-impl", version.ref = "jaxb-impl" }
 jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotations" }
 jlayer = { module = "com.googlecode.soundlibs:jlayer", version.ref = "jlayer" }

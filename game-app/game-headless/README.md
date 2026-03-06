@@ -29,11 +29,22 @@ docker compose-up
 
 ### Running bot via Gradle
 
-Example command to run a new headless game server from Gradle:
-```
-$ MAPS_FOLDER=/home/$USER/triplea/downloadedMaps ./gradlew :game-app:game-headless:run
-```
-See 'build.gradle' file to change things like lobby URI & bot port number.
+**MAPS_FOLDER must be a real directory that exists.** Do not use the placeholder `/path/to/downloadedMaps`.
+
+1. Create a maps directory (if needed):
+   ```bash
+   mkdir -p $HOME/triplea/downloadedMaps
+   ```
+2. Run the headless server (macOS/Linux):
+   ```bash
+   MAPS_FOLDER=$HOME/triplea/downloadedMaps ./gradlew :game-app:game-headless:run
+   ```
+   On Linux with a different path:
+   ```bash
+   MAPS_FOLDER=/home/$USER/triplea/downloadedMaps ./gradlew :game-app:game-headless:run
+   ```
+
+You need a running Lobby for the bot to connect to (see "Start a Lobby" above). See `build.gradle` to change lobby URI, bot port, or bot name.
 
 ### Running bot via Docker
 

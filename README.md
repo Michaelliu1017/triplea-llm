@@ -24,6 +24,14 @@ TripleA is a fan-created, open-source strategy and board game engine that brings
 
 ![Middle Earth Scenario](https://user-images.githubusercontent.com/12397753/132109223-14a0aa2e-a950-4a5e-9937-3c4b52211cd9.jpeg)
 
+## TripleA-LLM
+
+**TripleA-LLM** — use an LLM (e.g. OpenAI GPT) to play TripleA wargame. This repo adds a **Game Bridge** and **Python driver** so a language model can control one side (e.g. Japan) for full-auto play: purchase, deploy, move, and attack.
+
+- **[GETTING_STARTED.md](GETTING_STARTED.md)** — **发布到 GitHub** 的步骤 + **别人下载后如何在本地跑 GPT 对 Bot 对战**（环境、三终端启动、常见问题）。
+- [clients/python/README.md](clients/python/README.md) — 部署细节、架构、命令汇总。
+- [clients/python/项目实现与部署说明.md](clients/python/项目实现与部署说明.md) — 实现原理与跨机部署。
+
 ## Getting Started
 
 ### Download

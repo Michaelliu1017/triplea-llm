@@ -25,3 +25,6 @@ out/
 game-app/smoke-testing/src/test/resources/save-games/
 
 game-headed/triplea.log
+
+# Python venv for GPT driver
+clients/python/.venv/

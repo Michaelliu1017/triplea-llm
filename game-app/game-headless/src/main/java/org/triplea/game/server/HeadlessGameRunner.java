@@ -50,14 +50,22 @@ public final class HeadlessGameRunner {
                     + ProductVersionReader.getCurrentVersion().getMinor())
             .build());
 
-    Path mapsFolder = Path.of(System.getenv("MAPS_FOLDER"));
+    final String mapsFolderEnv = System.getenv("MAPS_FOLDER");
+    if (mapsFolderEnv == null || mapsFolderEnv.isBlank()) {
+      throw new RuntimeException(
+          "Environment variable MAPS_FOLDER is required. Example: "
+              + "MAPS_FOLDER=$HOME/triplea/downloadedMaps ./gradlew :game-app:game-headless:run");
+    }
+    Path mapsFolder = Path.of(mapsFolderEnv);
     if (!Files.isDirectory(mapsFolder)) {
       throw new RuntimeException(
-          "Check env variable: MAPS_FOLDER, value found: "
-              + System.getenv("MAPS_FOLDER")
-              + ", is not a directory");
+          "MAPS_FOLDER must be an existing directory. Current value: \""
+              + mapsFolderEnv
+              + "\". Create it with: mkdir -p \""
+              + mapsFolderEnv
+              + "\" or use a real path, e.g. MAPS_FOLDER=$HOME/triplea/downloadedMaps");
     }
-    ClientSetting.mapFolderOverride.setValue(Path.of(System.getenv("MAPS_FOLDER")));
+    ClientSetting.mapFolderOverride.setValue(mapsFolder);
 
     handleHeadlessGameServerArgs();
     ZippedMapsExtractor.builder()

@@ -3,6 +3,7 @@ package games.strategy.engine.data;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+import java.util.Optional;
 
 /**
  * To maintain == relationships and the singleton nature of many classes in GameData we do some work
@@ -24,6 +25,14 @@ public class GameObjectOutputStream extends ObjectOutputStream {
   protected Object replaceObject(final Object obj) {
     if (obj instanceof Named named && GameObjectStreamData.canSerialize(named)) {
       return new GameObjectStreamData(named);
+    }
+    if (obj instanceof Optional) {
+      Optional<?> opt = (Optional<?>) obj;
+      if (opt.isEmpty() || opt.get() instanceof String) {
+        Optional<String> str =
+            opt.isEmpty() ? Optional.empty() : Optional.of((String) opt.get());
+        return OptionalStringHolder.of(str);
+      }
     }
 
     return obj;
