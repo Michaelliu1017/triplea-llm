@@ -15,15 +15,16 @@ In the current setup, GPT controls Japan while other nations are controlled by b
 | **Python 3.10+** | 用于跑 GPT 驱动脚本。 |
 | **OpenAI API Key** | 在 [OpenAI](https://platform.openai.com) 获取，用于调用 gpt-4o-mini。 |
 
-### 1.2 下载项目 Download
+### 1.2 下载项目 Clone the Repository
 
 ```bash
 git clone https://github.com/Michaelliu1017/triplea-llm
 cd triplea-llm
 ```
 
-### 1.3 启动顺序（开三个终端页面）
+### 1.3 启动顺序 Startup Order
 
+#### 打开三个终端页面 You will run Host, Bridge, and GPT Controller in three separate terminals.
 #### 终端 1：启动 Host（TripleA GUI）
 
 ```bash
