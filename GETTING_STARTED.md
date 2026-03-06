@@ -43,7 +43,7 @@ cd triplea-llm
 ```
 
 - `--port 3301` 要和 Host 里显示的端口一致。
-- `--take Japanese` 要和**地图里日本方的名字**一致（有的图是 `Japanese`，有的是 `Japan`，在 Host 选人界面能看到）。
+- `--take Japanese` 要和**地图里日本方的名字**一致。
 - 看到 Bot加入游戏后即可开始，点击 **「开始游戏」**。
 
 #### 终端 3：启动 GPT 驱动
