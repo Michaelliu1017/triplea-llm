@@ -15,7 +15,7 @@
 ### 1.2 下载项目
 
 ```bash
-git clone https://github.com/你的用户名/triplea-llm.git
+git clone https://github.com/Michaelliu1017/triplea-llm
 cd triplea-llm
 ```
 
