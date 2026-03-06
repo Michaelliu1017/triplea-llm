@@ -44,7 +44,7 @@ cd triplea-llm
 
 - `--port 3301` 要和 Host 里显示的端口一致。
 - `--take Japanese` 要和**地图里日本方的名字**一致（有的图是 `Japanese`，有的是 `Japan`，在 Host 选人界面能看到）。
-- 看到 **"Bridge connected and took player"** 和 **"Bridge HTTP server listening on port 8081"** 后，回到 **Host 窗口**，点击 **「开始游戏」**。
+- 看到 Bot加入游戏后即可开始，点击 **「开始游戏」**。
 
 #### 终端 3：启动 GPT 驱动
 
@@ -60,7 +60,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 
 这样就是：**GPT 控制日本 vs 其他 Bot**，在本地完成对战。
 
-### 1.4 一键命令汇总（别人复制用）
+### 1.4 一键命令汇总
 
 假设仓库已克隆到 `triplea-llm`，在**项目根**执行：
 
