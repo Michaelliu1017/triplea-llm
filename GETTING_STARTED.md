@@ -1,7 +1,7 @@
-# TripleA-LLM：从发布到本地 GPT 对 Bot 对战
+# TripleA-LLM：基于 gpt-4o-mini 的 TripleA Wargame 游戏
 
 
-## 下载后如何部署（本地跑 GPT 对 Bot）
+## 项目部署（本地跑 GPT 对战 Bot）
 
 
 ### 1.1 环境准备
