@@ -1,8 +1,8 @@
 #!/bin/bash
-# 在虚拟环境中运行全自动对战，无需每次手动 source .venv
+
 cd "$(dirname "$0")"
 if [ ! -d ".venv" ]; then
-  echo "正在创建虚拟环境并安装 openai..."
+  echo "creating virtual env and installing openai..."
   python3 -m venv .venv
   .venv/bin/pip install openai
 fi
