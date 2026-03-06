@@ -42,7 +42,7 @@ cd triplea-llm
 ./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3300 --name Bot_Bridge --take Japanese"
 ```
 
-- `--port 3300` 要和 Host 里显示的端口一致。
+- `--port 3301` 要和 Host 里显示的端口一致。
 - `--take Japanese` 要和**地图里日本方的名字**一致（有的图是 `Japanese`，有的是 `Japan`，在 Host 选人界面能看到）。
 - 看到 **"Bridge connected and took player"** 和 **"Bridge HTTP server listening on port 8081"** 后，回到 **Host 窗口**，点击 **「开始游戏」**。
 
