@@ -48,6 +48,7 @@ cd triplea-llm
   - Enter the Waiting for Players screen
 
 #### 终端 2：启动 Bridge
+#### Terminal 2: Start the Bridge
 
 ```bash
 cd triplea-llm
@@ -59,6 +60,7 @@ cd triplea-llm
 - 看到 Bot加入游戏后即可开始，点击 **「开始游戏」**。
 
 #### 终端 3：启动 GPT 驱动
+#### Terminal 3: Start the GPT Controller
 
 ```bash
 cd triplea-llm/clients/python
@@ -67,12 +69,17 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 ```
 
 - 第一次运行会自动建 `.venv` 并装 `openai`。
+- On first run: A .venv virtual environment will be created automatically and The openai package will be installed
 - 之后 GPT 会持续替日本做决策（购买、部署、移动、进攻等），直到你按 **Ctrl+C** 或对局结束。
+- After that, GPT will continuously control Japan, making decisions. The match continues until you press Ctrl+C
 - 复制你的密钥：https://platform.openai.com/settings/organization/api-keys
+- Create or copy your API key from: https://platform.openai.com/settings/organization/api-keys
 
 至此：**GPT 实现控制日本 vs 其他国家 Bot**，在本地完成对战。
+At this point: GPT controls Japan vs other AI nations locally in TripleA.
 
 ### 1.4 一键命令汇总
+### 1.4  Quick Command Summary
 
 假设仓库已克隆到 `triplea-llm`，在**项目根**执行：
 
@@ -83,10 +90,14 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 | **3 - GPT** | `cd clients/python && export OPENAI_API_KEY=sk-你的key && ./run_auto.sh --rules-file rules_zh.txt` |
 
 ### 1.5 常见问题
+### 1.5 Troubleshooting
 
 - **Bridge 连不上 / 没有「开始游戏」**：确认 Host 已到等待玩家界面，端口、无密码，再启动 Bridge。
+- **Bridge cannot connect / no "Start Game" button; Ensure: Host is already in the Waiting for Players screen,Correct port,No password,Start Bridge after Host
 - **一直提示「当前不是日本回合」**：注意你的启动顺序，先启动host，再连接bridge。
+- ** Not Japan's turn" appears repeatedly on terminal; Check your startup order: Start Host, then start Bridge, and finally start GPT Controller
 - **GET /state 报错或超时**：确认 Host 已点「开始游戏」，且 Bridge 终端里已打印 "Bridge connected"。
+- **GET /state timeout or error; Ensure: The Host GUI has clicked "Start Game" The Bridge terminal shows
 - 更多见：`clients/python/排查「不是日本回合」.md`、`clients/python/项目实现与部署说明.md`。
 
 ---
