@@ -58,7 +58,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 - 之后 GPT 会持续替日本做决策（购买、部署、移动、进攻等），直到你按 **Ctrl+C** 或对局结束。
 - 复制你的密钥：https://platform.openai.com/settings/organization/api-keys
 
-这样就是：**GPT 控制日本 vs 其他 Bot**，在本地完成对战。
+至此：**GPT 实现控制日本 vs 其他国家 Bot**，在本地完成对战。
 
 ### 1.4 一键命令汇总
 
@@ -66,7 +66,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 
 | 终端 | 命令 |
 |------|------|
-| **1 - Host** | `./gradlew :game-app:game-headed:run` → 在 GUI 建房间、其他玩家选 AI、日本留给人/网络、记端口、等连接 |
+| **1 - Host** | `./gradlew :game-app:game-headed:run` → 在 GUI 建房间,其他玩家选 AI,日本设为Human, 等待连接 |
 | **2 - Bridge** | `./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3301 --name Bot_Bridge --take Japanese"` |
 | **3 - GPT** | `cd clients/python && export OPENAI_API_KEY=sk-你的key && ./run_auto.sh --rules-file rules_zh.txt` |
 
