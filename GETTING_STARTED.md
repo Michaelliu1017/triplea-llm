@@ -69,10 +69,10 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 | **2 - Bridge** | `./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3300 --name Bot_Bridge --take Japanese"` |
 | **3 - GPT** | `cd clients/python && export OPENAI_API_KEY=sk-你的key && ./run_auto.sh --rules-file rules_zh.txt` |
 
-### 1.5 常见问题（别人可能遇到）
+### 1.5 常见问题
 
 - **Bridge 连不上 / 没有「开始游戏」**：确认 Host 已到等待玩家界面，端口、无密码，再启动 Bridge。
-- **一直提示「当前不是日本回合」**：把 Bridge 的 `--take` 改成地图里日本方的**准确名字**（如 `Japanese` 或 `Japan`）。
+- **一直提示「当前不是日本回合」**：注意你的启动顺序，先启动host，再连接bridge。
 - **GET /state 报错或超时**：确认 Host 已点「开始游戏」，且 Bridge 终端里已打印 "Bridge connected"。
 - 更多见：`clients/python/排查「不是日本回合」.md`、`clients/python/项目实现与部署说明.md`。
 
