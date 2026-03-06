@@ -1,5 +1,8 @@
 # TripleA-LLM：基于 gpt-4o-mini 的 TripleA Wargame 游戏
+This project enables GPT-4o-mini to control a faction in the TripleA wargame.
+The system connects the TripleA game engine with an LLM through a bridge service so that GPT can make decisions such as purchasing units, placing units, moving, and attacking.
 
+In the current setup, GPT controls Japan while other nations are controlled by built-in bots.
 
 ## 项目部署（本地跑 GPT 对战 Bot）
 
