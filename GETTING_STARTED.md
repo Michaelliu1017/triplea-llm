@@ -46,7 +46,7 @@ cd triplea-llm
 - `--take Japanese` 要和**地图里日本方的名字**一致（有的图是 `Japanese`，有的是 `Japan`，在 Host 选人界面能看到）。
 - 看到 **"Bridge connected and took player"** 和 **"Bridge HTTP server listening on port 8081"** 后，回到 **Host 窗口**，点击 **「开始游戏」**。
 
-#### 终端 3：启动 GPT 驱动（让 GPT 下日本）
+#### 终端 3：启动 GPT 驱动
 
 ```bash
 cd triplea-llm/clients/python
@@ -56,6 +56,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 
 - 第一次运行会自动建 `.venv` 并装 `openai`。
 - 之后 GPT 会持续替日本做决策（购买、部署、移动、进攻等），直到你按 **Ctrl+C** 或对局结束。
+- 复制你的密钥：https://platform.openai.com/settings/organization/api-keys
 
 这样就是：**GPT 控制日本 vs 其他 Bot**，在本地完成对战。
 
