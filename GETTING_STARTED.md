@@ -4,18 +4,18 @@ The system connects the TripleA game engine with an LLM through a bridge service
 
 In the current setup, GPT controls Japan while other nations are controlled by built-in bots.
 
-## 项目部署（本地跑 GPT 对战 Bot）
+## 项目部署 Project Deployment
 
 
 ### 1.1 环境准备
 
-| 需要 | 说明 |
+| 需要 | Required |
 |------|------|
 | **Java JDK 17+** | 用于跑 TripleA Host 和 Bridge。 |
 | **Python 3.10+** | 用于跑 GPT 驱动脚本。 |
 | **OpenAI API Key** | 在 [OpenAI](https://platform.openai.com) 获取，用于调用 gpt-4o-mini。 |
 
-### 1.2 下载项目
+### 1.2 下载项目 Download
 
 ```bash
 git clone https://github.com/Michaelliu1017/triplea-llm
