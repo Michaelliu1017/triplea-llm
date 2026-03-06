@@ -19,7 +19,7 @@ git clone https://github.com/Michaelliu1017/triplea-llm
 cd triplea-llm
 ```
 
-### 1.3 启动顺序（开三个终端）
+### 1.3 启动顺序（开三个终端页面）
 
 #### 终端 1：启动 Host（TripleA GUI）
 
@@ -35,7 +35,7 @@ cd triplea-llm
   - 记下 **端口** 选择 3301，**不要设密码**。
   - 进入 **等待玩家** 界面，**先不要点「开始游戏」**。
 
-#### 终端 2：启动 Bridge（接管日本）
+#### 终端 2：启动 Bridge
 
 ```bash
 cd triplea-llm
