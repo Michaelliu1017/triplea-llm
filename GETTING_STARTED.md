@@ -93,11 +93,11 @@ At this point: GPT controls Japan vs other AI nations locally in TripleA.
 ### 1.5 Troubleshooting
 
 - **Bridge 连不上 / 没有「开始游戏」**：确认 Host 已到等待玩家界面，端口、无密码，再启动 Bridge。
-- **Bridge cannot connect / no "Start Game" button; Ensure: Host is already in the Waiting for Players screen,Correct port,No password,Start Bridge after Host
+- **Bridge cannot connect / no "Start Game" button**; Ensure: Host is already in the Waiting for Players screen,Correct port,No password,Start Bridge after Host
 - **一直提示「当前不是日本回合」**：注意你的启动顺序，先启动host，再连接bridge。
-- ** Not Japan's turn" appears repeatedly on terminal; Check your startup order: Start Host, then start Bridge, and finally start GPT Controller
+- **Not Japan's turn" appears repeatedly on terminal**; Check your startup order: Start Host, then start Bridge, and finally start GPT Controller
 - **GET /state 报错或超时**：确认 Host 已点「开始游戏」，且 Bridge 终端里已打印 "Bridge connected"。
-- **GET /state timeout or error; Ensure: The Host GUI has clicked "Start Game" The Bridge terminal shows
+- **GET /state timeout or error**; Ensure: The Host GUI has clicked "Start Game" The Bridge terminal shows
 - 更多见：`clients/python/排查「不是日本回合」.md`、`clients/python/项目实现与部署说明.md`。
 
 ---
