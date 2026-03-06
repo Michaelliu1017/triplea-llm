@@ -79,9 +79,4 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 
 ---
 
-## 小结
 
-- **你要发布**：按 **一** 在 GitHub 建仓库 `triplea-llm`，在项目根 `git init` → `add` → `commit` → `remote` → `push`。
-- **别人要本地跑 GPT 对 Bot**：按 **二** 克隆 → 装好 Java / Python / API Key → 依次开 Host（其他玩家选 AI）→ Bridge（接管日本）→ GPT Driver（`run_auto.sh`）。
-
-更细的部署与原理见：**clients/python/README.md**、**clients/python/项目实现与部署说明.md**。
