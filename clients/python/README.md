@@ -1,6 +1,6 @@
 # TripleA-LLM
 
-**TripleA-LLM** — play TripleA wargame with an LLM. Use OpenAI GPT (Function Calling) to control one side (e.g. Japan): purchase, deploy, move, and attack via a Bridge HTTP API.
+**TripleA-LLM** — play TripleA wargame with an LLM. Use OpenAI GPT to control one side (e.g. Japan): purchase, deploy, move, and attack via a Bridge HTTP API.
 
 ## 架构简述
 
@@ -21,7 +21,7 @@ TripleA Host (GUI)  ←── LAN ──→  Bridge (Java, :8081)  ←── HTT
 | **Python** | 3.10+（推荐 3.11/3.12） |
 | **OpenAI** | 有效 API Key（如 gpt-4o-mini） |
 
-## 部署步骤（按顺序）
+## 部署步骤（需按顺序）
 
 ### 1. 克隆仓库并进入项目根目录
 
