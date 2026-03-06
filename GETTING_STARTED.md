@@ -7,7 +7,7 @@ In the current setup, GPT controls Japan while other nations are controlled by b
 ## 项目部署 Project Deployment
 
 
-### 1.1 环境准备
+### 1.1 环境准备 Prepare the Enviroment
 
 | 需要 | Required |
 |------|------|
@@ -78,8 +78,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 至此：**GPT 实现控制日本 vs 其他国家 Bot**，在本地完成对战。
 At this point: GPT controls Japan vs other AI nations locally in TripleA.
 
-### 1.4 一键命令汇总
-### 1.4  Quick Command Summary
+### 1.4 一键命令汇总  Quick Command Summary
 
 假设仓库已克隆到 `triplea-llm`，在**项目根**执行：
 
@@ -89,8 +88,7 @@ At this point: GPT controls Japan vs other AI nations locally in TripleA.
 | **2 - Bridge** | `./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3301 --name Bot_Bridge --take Japanese"` |
 | **3 - GPT** | `cd clients/python && export OPENAI_API_KEY=sk-你的key && ./run_auto.sh --rules-file rules_zh.txt` |
 
-### 1.5 常见问题
-### 1.5 Troubleshooting
+### 1.5 常见问题 Troubleshooting
 
 - **Bridge 连不上 / 没有「开始游戏」**：确认 Host 已到等待玩家界面，端口、无密码，再启动 Bridge。
 - **Bridge cannot connect / no "Start Game" button**; Ensure: Host is already in the Waiting for Players screen,Correct port,No password,Start Bridge after Host
