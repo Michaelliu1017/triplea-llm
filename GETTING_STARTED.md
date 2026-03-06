@@ -32,7 +32,7 @@ cd triplea-llm
   - **Play** → **Host a game**（或等效入口）。
   - 选地图，例如 **Pacific 40**（或任意支持多方的图）。
   - **玩家设置**：**日本（Japan/Japanese）** 设为 **Human** 或 **Network**（由“玩家”连接），**其他所有玩家**设为 **AI**（Bot）。
-  - 记下 **端口**（如 3300），**不要设密码**。
+  - 记下 **端口** 选择 3301，**不要设密码**。
   - 进入 **等待玩家** 界面，**先不要点「开始游戏」**。
 
 #### 终端 2：启动 Bridge（接管日本）
@@ -67,7 +67,7 @@ export OPENAI_API_KEY=sk-你的OpenAI密钥
 | 终端 | 命令 |
 |------|------|
 | **1 - Host** | `./gradlew :game-app:game-headed:run` → 在 GUI 建房间、其他玩家选 AI、日本留给人/网络、记端口、等连接 |
-| **2 - Bridge** | `./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3300 --name Bot_Bridge --take Japanese"` |
+| **2 - Bridge** | `./gradlew :game-app:game-bridge:run --args="--host 127.0.0.1 --port 3301 --name Bot_Bridge --take Japanese"` |
 | **3 - GPT** | `cd clients/python && export OPENAI_API_KEY=sk-你的key && ./run_auto.sh --rules-file rules_zh.txt` |
 
 ### 1.5 常见问题
